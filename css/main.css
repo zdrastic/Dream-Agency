@@ -1,0 +1,158 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+a:visited {
+  color: black;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1940px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+}
+.header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.header__menu {
+  width: 33%;
+  max-width: 357px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu a {
+  text-decoration: none;
+}
+.header__menu a span {
+  font-weight: bold;
+}
+.header__menu a span::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 50%; /* Ширина підкреслення (половина слова) */
+  height: 2px; /* Товщина підкреслення */
+  background-color: orange; /* Колір підкреслення */
+}
+
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header__links {
+  width: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__links a {
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 44px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform: rotate(30deg);
+}
+.header__links img {
+  transform: rotate(-30deg);
+}
+
+.section1 {
+  width: 100%;
+}
+.section1 .container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.section1 .container img {
+  position: absolute;
+  width: 50%;
+  height: fit-content;
+}
+.section1 .container img:nth-child(2) {
+  left: 70%;
+  top: -40%;
+}
+.section1 .container img:nth-child(3) {
+  left: 65%;
+  width: 30%;
+  height: 90%;
+}
+.section1 .container img:nth-child(4) {
+  left: 50%;
+  top: 25%;
+}
+
+.section1__text {
+  font-family: "Hind Vadodara", sans-serif;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+.section1__text h2, .section1__text h3, .section1__text p {
+  padding: 0px;
+  margin: 0px;
+  max-width: 515px;
+}
+.section1__text h2 {
+  font-weight: bold;
+  font-size: 87px;
+}
+.section1__text h3 {
+  font-weight: normal;
+  font-size: 87px;
+}
+.section1__text p {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 146%;
+}
+.section1__text a {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background-color: #331B3B;
+  width: 207px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+  border-radius: 10px;
+}
